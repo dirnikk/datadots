@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Bill Calculator</title>
+    <style>
+        h2, form, p {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Option 1</h1>
+    <h2>AWS Bill Calculator</h2>
+    <form method="POST" action="/">
+        <label for="aws_access_key_id">AWS Access Key ID:</label><br>
+        <input type="text" id="aws_access_key_id" name="aws_access_key_id" required><br><br>
+        <label for="aws_secret_access_key">AWS Secret Access Key:</label><br>
+        <input type="text" id="aws_secret_access_key" name="aws_secret_access_key" required><br><br>
+        <label for="start_date">Start Date:</label><br>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+        <label for="end_date">End Date:</label><br>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+</div>
+
+<div>
+    <h1>Option 2</h1>
+    <h2>Client's IP Address:</h2>
+    <p>{{ client_ip }}</p>
+</div>
+<div>
+    <h2>Public IP Address:</h2>
+    <p>{{ public_ip }}</p>
+</div>
+</body>
+</html>
