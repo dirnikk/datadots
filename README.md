@@ -18,7 +18,8 @@ For both cases go to your browser on address 127.0.0.1:5000 and the app should o
 
 It is a simple flask app which once you provide `AWS_ACCESS_KEY_ID` & `AWS_SECRET_ACCESS_KEY`. 
 It will calculate the bill for the specified period. 
-The second which will show you are Client and Public IP addresses.
+
+The second thing is to provide Client and Public IP addresses for where the app is hosted and the public IP address of the client.
 
 
 Run the application as a Kubernetes deployment
