@@ -25,4 +25,8 @@ Run the application as a Kubernetes deployment
 ```bash
 kubectl apply -f k8s/deployment.yaml
 kubectl port-forward deployment/datadots-vkehayov 5000:5000
+
+## Once you are done testing
+
+kubectl delete -f k8s/deployment.yaml
 ```
